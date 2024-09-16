@@ -1,0 +1,13 @@
+.list {
+  @apply text-xs;@apply absolute;@apply z-50;@apply bg-white ;@apply h-[20rem] ;@apply overflow-y-auto;@apply translate-x-[-80%];@apply w-[15rem];
+  @apply p-4;@apply text-nowrap;@apply rounded;@apply shadow-md;@apply shadow-zinc-300;
+}
+.curr-btn{
+  @apply border-b-[1px]; @apply border-gray-200; @apply p-2; @apply active:bg-zinc-400
+}
+.balance-palette {
+  @apply mt-3; @apply text-white; @apply inline-block; @apply w-full; @apply p-5; @apply rounded-2xl; @apply md:w-60;@apply shadow-sm;@apply shadow-zinc-300;
+}
+.amount-par{
+  @apply mt-5; @apply text-3xl; @apply font-openSans; @apply font-bold;
+}
