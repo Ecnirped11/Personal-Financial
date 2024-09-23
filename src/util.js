@@ -12,11 +12,29 @@ export function handleOptions({currList}) {
   }
   return toObject
 }
-export const deafaulAmount = {
-    currenBalance : 4563.00,
+
+export function walletBalance({potsList , deafault}){
+    const priceList = potsList.map((element) => Number(element.prices))
+    const addUpPrice = priceList.reduce((a , b) => a + b , 0)
+    return addUpPrice
+}
+
+
+export function balancePallete({savePots,deafault}){
+   //console.log(savePots)
+   
+   const deafaultAmount = {
+      currenBalance:deafault,
+      income : 3814.25,
+      expenses : 1405.00
+    }
+   return deafaultAmount
+}
+export const deafaultAmount = {
+    currenBalance : 950000 ,
     income : 3814.25,
     expenses : 1405.00
-}
+  }
 export let savingsList = []
     
 export const sectionTitle = {
@@ -25,3 +43,4 @@ export const sectionTitle = {
     budget : "budgets",
     Recurring : "ecurring bills"
 }
+

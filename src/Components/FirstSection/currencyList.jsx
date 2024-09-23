@@ -11,17 +11,17 @@ export default function CurrencyList({showLists,onSelect,onShowLists,currentCurr
   return (
     <div>
       <div className="flex flex-row items-center">
-        <p onClick={onShowLists} className="font-medium text-gray-700">
+        <p onClick={onShowLists} className="font-medium text-green-500">
             {currentCurr}
         </p> 
         {
           showLists === false ? (
-            <FaCaretUp/>
-          ): (<FaCaretDown />)
+            <FaCaretDown/>
+          ): (<FaCaretUp />)
         }
       </div>
       {showLists && (
-        <div className="list" >
+        <div className={`list`}>
           {mappingElement.map((element , index) => (
             <div key={index} className="curr-btn">
               <button onClick={()=>onSelect(element)}>

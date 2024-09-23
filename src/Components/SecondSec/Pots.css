@@ -1,0 +1,44 @@
+.pots-input{
+  @apply bg-neutral-900; @apply p-6;@apply rounded-[10px];@apply mb-16;@apply border-[1px];@apply border-neutral-700; @apply inline-block ;margin: 0 1.2rem 1.2rem 1.2rem;@apply md:mt-5;
+}
+.text-input {
+   @apply flex; @apply flex-row; @apply justify-around;@apply gap-3;@apply mb-3;
+}
+.text-input input{
+    @apply w-[60%];@apply p-2;@apply bg-neutral-800;@apply text-white;@apply rounded;
+}
+.pot-item {
+   @apply bg-zinc-900;@apply p-4;@apply rounded-[10px];
+}
+.pot-wallet-title{
+    @apply flex; @apply flex-row; @apply items-center; @apply text-[1rem]; @apply gap-3;@apply mb-5
+}
+
+.wallet-balace{
+    @apply mt-5; @apply text-3xl; @apply font-openSans; @apply font-bold;
+}
+.pots-bal{
+   @apply bg-neutral-900; @apply p-6;@apply rounded-[10px];@apply border-[1px];@apply border-neutral-700;@apply inline-block;@apply w-full;@apply md:w-[95%]
+}
+.loading{
+  @apply flex;@apply justify-center;@apply fixed;@apply z-[999];background-color:hsla(0,0%,10.4%,0.7);@apply m-0;
+}
+.amount{
+  @apply font-medium; @apply text-green-500;
+}
+.backgroud{
+  @apply bg-zinc-900;
+}
+.paragraph{
+  animation: side-display 0.3s linear;@apply translate-y-[40%]; @apply bg-zinc-800; @apply p-5; @apply rounded-[10px]; border: 1px solid hsl(0,0.3%,23.8%);@apply shadow-md ;@apply shadow-zinc-950
+}
+@keyframes side-display{
+  from{
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(40%);
+  }
+}

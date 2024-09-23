@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {},
     fontFamily:{
-      openSans : ["Public Sans", "sans-serif"]
+      openSans : ["Public Sans", "sans-serif"],
+      roboto : ["Roboto", "sans-serif"]
     }
   },
   plugins: [],

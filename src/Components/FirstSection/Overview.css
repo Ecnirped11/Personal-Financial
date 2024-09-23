@@ -1,13 +1,30 @@
 .list {
-  @apply text-xs;@apply absolute;@apply z-50;@apply bg-white ;@apply h-[20rem] ;@apply overflow-y-auto;@apply translate-x-[-80%];@apply w-[15rem];
-  @apply p-4;@apply text-nowrap;@apply rounded;@apply shadow-md;@apply shadow-zinc-300;
+  @apply text-xs;@apply absolute;@apply z-50;@apply bg-zinc-800 ;@apply h-[20rem] ;@apply overflow-y-auto;@apply translate-x-[-80%];@apply w-[15rem];
+  @apply p-4;@apply text-nowrap;@apply rounded;animation: show-out 0.4s linear;
+}
+@keyframes show-out{
+  from{opacity:0;height:0rem;}
+  to{opacity: 1;height:20rem;}
 }
 .curr-btn{
-  @apply border-b-[1px]; @apply border-gray-200; @apply p-2; @apply active:bg-zinc-400
+   @apply p-2; @apply active:bg-zinc-400
 }
 .balance-palette {
-  @apply mt-3; @apply text-white; @apply inline-block; @apply w-full; @apply p-5; @apply rounded-2xl; @apply md:w-60;@apply shadow-sm;@apply shadow-zinc-300;
+  @apply mt-3; @apply text-white; @apply inline-block; @apply w-full; @apply p-5; @apply rounded-[10px]; @apply md:w-60;@apply border-[1px];@apply border-zinc-800;animation: slide-in 0.5s linear;
+}
+@keyframes slide-in{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+.check-bal{
+  @apply flex; @apply flex-row; @apply items-center; @apply gap-3;
 }
 .amount-par{
   @apply mt-5; @apply text-3xl; @apply font-openSans; @apply font-bold;
+}
+.label{
+  @apply text-[1.5rem]; @apply capitalize; @apply text-zinc-100;@apply mt-3;
+}
+.sl-bg{
+    @apply bg-zinc-800; @apply p-6;@apply rounded-[10px];@apply border-[1px];@apply border-zinc-700;animation: slide-in 0.5s linear;
 }
